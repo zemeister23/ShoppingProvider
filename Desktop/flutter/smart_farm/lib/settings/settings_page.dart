@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/route_manager.dart';
 import 'package:smart_farm/constants.dart';
+import 'package:smart_farm/login/sign_in.dart';
 import 'package:smart_farm/service/firebase_service.dart';
 import 'package:smart_farm/settings/components/money_history.dart';
 
@@ -16,15 +18,15 @@ class SettingsPage extends StatelessWidget {
           padding: const EdgeInsets.all(16.0),
           child: Column(
             children: [
-               ListTile(
-                contentPadding:const EdgeInsets.all(0.0),
-                leading:const CircleAvatar(
+              ListTile(
+                contentPadding: const EdgeInsets.all(0.0),
+                leading: const CircleAvatar(
                   child: Icon(
                     CupertinoIcons.person,
                     color: Colors.white,
                   ),
                 ),
-                title:const Text(
+                title: const Text(
                   "Xaridor",
                   style: TextStyle(fontWeight: FontWeight.w600, fontSize: 18.0),
                 ),
@@ -76,7 +78,6 @@ class SettingsPage extends StatelessWidget {
               Expanded(
                 child: Container(
                   width: double.infinity,
-                  padding: const EdgeInsets.all(8.0),
                   decoration: BoxDecoration(
                     border: Border.all(color: kPrimaryLightColor),
                     borderRadius: BorderRadius.circular(10.0),
@@ -98,10 +99,66 @@ class SettingsPage extends StatelessWidget {
                 flex: 5,
               ),
               const Spacer(flex: 1),
+              Expanded(
+                child: Container(
+                  width: double.infinity,
+                  // padding: const EdgeInsets.all(18.0),
+                  decoration: BoxDecoration(
+                    border: Border.all(color: Colors.redAccent),
+                    borderRadius: BorderRadius.circular(10.0),
+                  ),
+                  child: ListTile(
+                    onTap: () {
+                      signOutAlertBottomSheet(context);
+                    },
+                    leading: const Icon(Icons.logout, color: Colors.redAccent),
+                    title: const Text(
+                      "Hisobdan chiqish",
+                      style: TextStyle(fontSize: 16.0),
+                    ),
+                    trailing: const Icon(
+                      Icons.arrow_forward_ios,
+                      color: Colors.redAccent,
+                      size: 14.0,
+                    ),
+                  ),
+                ),
+                flex: 5,
+              ),
+              const Spacer(flex: 1),
             ],
           ),
         ),
       ),
     );
+  }
+
+  Future<PersistentBottomSheetController<dynamic>> signOutAlertBottomSheet(
+      BuildContext context) async {
+    return showBottomSheet(
+        constraints: BoxConstraints(minHeight: Get.height * 0.1),
+        context: context,
+        builder: (context) {
+          return Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              ElevatedButton(
+                child: const Text("Ha"),
+                onPressed: () async {
+                  await FirebaseService.auth.signOut().then((value) =>
+                      Get.off(SignIn(), transition: Transition.topLevel));
+                },
+                style: ElevatedButton.styleFrom(primary: Colors.red),
+              ),
+              ElevatedButton(
+                child: const Text("Yo'q"),
+                onPressed: () {
+                  Get.back();
+                },
+                style: ElevatedButton.styleFrom(primary: kPrimaryColor),
+              ),
+            ],
+          );
+        });
   }
 }

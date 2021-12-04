@@ -79,15 +79,3 @@ class MyFermaPage extends StatelessWidget {
   }
 }
 
-/*
-const DetailFarm(
-              image: AssetImage(
-                'assets/images/ina_ferma.png',
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(14.0)),
-              child: ChooseAnimal(),
-            ),
-            const AnimalsData(),
-*/

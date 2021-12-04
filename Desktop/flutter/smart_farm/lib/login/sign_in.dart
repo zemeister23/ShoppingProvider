@@ -227,7 +227,7 @@ class SignIn extends StatelessWidget {
 
       final User? user = (await auth.signInWithCredential(credential)).user;
 
-      Get.to(HomePage());
+      Get.off(HomePage());
     } catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text("Parolni Tekshirib Qaytadan Tering !")));
