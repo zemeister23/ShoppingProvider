@@ -29,9 +29,9 @@ class MoneyHistory extends StatelessWidget {
             SizedBox(
               height: getProportionateScreenHeight(18.0),
             ),
-            const Text(
-              "Depozit",
-              style: TextStyle(
+            Text(
+              text,
+              style: const TextStyle(
                 fontSize: 16.0,
               ),
               overflow: TextOverflow.ellipsis,

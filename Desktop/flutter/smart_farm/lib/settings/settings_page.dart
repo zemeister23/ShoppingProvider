@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:smart_farm/constants.dart';
+import 'package:smart_farm/service/firebase_service.dart';
 import 'package:smart_farm/settings/components/money_history.dart';
-import 'package:smart_farm/size_config.dart';
 
 class SettingsPage extends StatelessWidget {
   const SettingsPage({Key? key}) : super(key: key);
@@ -16,20 +16,20 @@ class SettingsPage extends StatelessWidget {
           padding: const EdgeInsets.all(16.0),
           child: Column(
             children: [
-              const ListTile(
-                contentPadding: EdgeInsets.all(0.0),
-                leading: CircleAvatar(
+               ListTile(
+                contentPadding:const EdgeInsets.all(0.0),
+                leading:const CircleAvatar(
                   child: Icon(
                     CupertinoIcons.person,
                     color: Colors.white,
                   ),
                 ),
-                title: Text(
-                  "Abdumalik Kalandarov",
+                title:const Text(
+                  "Xaridor",
                   style: TextStyle(fontWeight: FontWeight.w600, fontSize: 18.0),
                 ),
                 subtitle: Text(
-                  "+998 90 123 45 67",
+                  "${FirebaseService.auth.currentUser!.phoneNumber}",
                   style: TextStyle(fontSize: 14.0, color: Colors.black),
                 ),
               ),

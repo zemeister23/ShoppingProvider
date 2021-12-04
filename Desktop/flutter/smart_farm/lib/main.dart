@@ -1,12 +1,14 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get_it/get_it.dart';
 import 'package:smart_farm/constants.dart';
 import 'package:smart_farm/home/home_page.dart';
 import 'package:smart_farm/login/sign_in.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:smart_farm/service/firebase_service.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const MyApp());
 }
 
@@ -27,7 +29,7 @@ class MyApp extends StatelessWidget {
             bodyText1: TextStyle(color: Colors.black),
             bodyText2: TextStyle(color: Colors.black)),
       ),
-      home: SignIn(),
+      home: FirebaseService.auth.currentUser != null ? HomePage() : SignIn(),
     );
   }
 }

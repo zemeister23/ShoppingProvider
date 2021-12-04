@@ -41,6 +41,8 @@ dependencies:
   flutter_calendar_carousel: ^2.0.3
   intl_phone_number_input: ^0.7.0+2
   animate_do: ^2.0.0
+  firebase_core: ^1.10.2
+  firebase_auth: ^3.3.0
 
 dev_dependencies:
   flutter_test:
