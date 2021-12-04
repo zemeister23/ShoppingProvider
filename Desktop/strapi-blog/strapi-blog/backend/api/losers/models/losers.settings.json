@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "losers",
+  "info": {
+    "name": "Losers"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "isMarried": {
+      "type": "boolean",
+      "required": true,
+      "private": false,
+      "unique": false
+    },
+    "Description": {
+      "type": "richtext",
+      "default": "description",
+      "required": true
+    },
+    "ProfileImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    }
+  }
+}
