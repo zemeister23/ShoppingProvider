@@ -6,11 +6,12 @@ import 'package:smart_farm/myFerma/components/blur_title.dart';
 import 'package:smart_farm/size_config.dart';
 import 'package:smart_farm/widgets/buy_bottom_sheep.dart';
 import 'package:smart_farm/widgets/current_news.dart';
-import 'package:smart_farm/widgets/info_bottomsheep.dart';
 import 'package:smart_farm/widgets/my_back_button.dart';
 
 class AboutAnimal extends StatelessWidget {
-  AboutAnimal({Key? key}) : super(key: key);
+  var data;
+  String? phone;
+  AboutAnimal({Key? key, this.data, this.phone}) : super(key: key);
 
   final AnimalScrollImage _scrollImage = Get.put(AnimalScrollImage());
   @override
@@ -40,7 +41,7 @@ class AboutAnimal extends StatelessWidget {
                     physics: const BouncingScrollPhysics(),
                     itemBuilder: (context, index) {
                       return Image.network(
-                        "https://lookw.ru/9/970/1566943698-1-22.jpg",
+                        ipAdress + data['image']['formats']['medium']['url'],
                         fit: BoxFit.cover,
                       );
                     },
@@ -55,12 +56,12 @@ class AboutAnimal extends StatelessWidget {
                       children: [
                         const MyBackButton(),
                         const Spacer(),
-                        const Align(
+                        Align(
                           alignment: Alignment.bottomRight,
                           child: BlurTitle(
                             child: Text(
-                              "2 oylik",
-                              style: TextStyle(
+                              data['title'].toString(),
+                              style: const TextStyle(
                                 color: Colors.white,
                                 fontSize: 14.0,
                               ),
@@ -87,10 +88,10 @@ class AboutAnimal extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Expanded(
+                      Expanded(
                         child: Text(
-                          "Bugun 14:52",
-                          style: TextStyle(
+                          data['updated_at'].toString(),
+                          style: const TextStyle(
                             fontSize: 12.0,
                             overflow: TextOverflow.ellipsis,
                             color: kPrimaryBorderColor,
@@ -99,10 +100,10 @@ class AboutAnimal extends StatelessWidget {
                         ),
                         flex: 2,
                       ),
-                      const Expanded(
+                      Expanded(
                         child: Text(
-                          "Sof zotli toy",
-                          style: TextStyle(
+                          data['title'].toString(),
+                          style: const TextStyle(
                             fontSize: 24.0,
                             overflow: TextOverflow.ellipsis,
                             fontWeight: FontWeight.w400,
@@ -110,10 +111,10 @@ class AboutAnimal extends StatelessWidget {
                         ),
                         flex: 2,
                       ),
-                      const Expanded(
+                      Expanded(
                         child: Text(
-                          "2 000 000 Sum",
-                          style: TextStyle(
+                          data['price'].toString(),
+                          style: const TextStyle(
                             fontSize: 20.0,
                             overflow: TextOverflow.ellipsis,
                             fontWeight: FontWeight.w700,
@@ -136,10 +137,10 @@ class AboutAnimal extends StatelessWidget {
                         ),
                         flex: 2,
                       ),
-                      const Expanded(
+                      Expanded(
                         child: Text(
-                          "12dona:",
-                          style: TextStyle(
+                          data['count'].toString() + ' dona',
+                          style: const TextStyle(
                             fontSize: 16.0,
                             color: kPrimaryBorderColor,
                             overflow: TextOverflow.ellipsis,
@@ -157,10 +158,10 @@ class AboutAnimal extends StatelessWidget {
                         ),
                         flex: 2,
                       ),
-                      const Expanded(
+                      Expanded(
                         child: Text(
-                          "2 oy davomida Germaniyadan nasldan naslga hech qanday kasallik yo'q",
-                          style: TextStyle(
+                          data['description'].toString(),
+                          style: const TextStyle(
                             fontSize: 16.0,
                             color: kPrimaryBorderColor,
                             overflow: TextOverflow.visible,
@@ -173,14 +174,17 @@ class AboutAnimal extends StatelessWidget {
                           Expanded(
                             child: OutlinedButton(
                               onPressed: () {
-                                Get.bottomSheet(BuyBottomSheep(isBuy: false));
+                                Get.bottomSheet(BuyBottomSheep(
+                                  isBuy: false,
+                                  phone: phone,
+                                ));
                               },
                               child: Padding(
                                 padding: EdgeInsets.symmetric(
                                     vertical:
                                         getProportionateScreenHeight(14.0)),
                                 child: const Text(
-                                  "Boglanmoq",
+                                  "Boglanish",
                                   style: TextStyle(
                                     fontSize: 16.0,
                                     fontWeight: FontWeight.w400,
@@ -205,7 +209,11 @@ class AboutAnimal extends StatelessWidget {
                             child: TextButton(
                               onPressed: () {
                                 Get.bottomSheet(
-                                  BuyBottomSheep(isBuy: true),
+                                  BuyBottomSheep(
+                                    isBuy: true,
+                                    phone: phone,
+                                    data: data,
+                                  ),
                                 );
                               },
                               child: Padding(

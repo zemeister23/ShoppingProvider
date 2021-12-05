@@ -10,7 +10,9 @@ import '../constants.dart';
 
 class BuyBottomSheep extends StatelessWidget {
   final bool isBuy;
-  BuyBottomSheep({Key? key, required this.isBuy}) : super(key: key);
+  final String? phone;
+  var data;
+  BuyBottomSheep({Key? key, required this.isBuy, this.phone,this.data}) : super(key: key);
 
   final MyIncrementGetx _incrementGetx = Get.put(MyIncrementGetx());
   @override
@@ -56,9 +58,9 @@ class BuyBottomSheep extends StatelessWidget {
           ),
         ),
         const Spacer(flex: 1),
-        const Text(
-          "+998 97 736-63-25",
-          style: TextStyle(
+        Text(
+          phone ?? 'Telefon Mavjud Emas',
+          style: const TextStyle(
             fontSize: 20.0,
             fontWeight: FontWeight.w600,
           ),
@@ -81,7 +83,7 @@ class BuyBottomSheep extends StatelessWidget {
                 borderRadius: BorderRadius.circular(10.0)),
           ),
           onPressed: () {
-            launch("tel://+998 97 736-63-25");
+            launch("tel://$phone");
             Get.back();
           },
         ),
@@ -107,7 +109,7 @@ class BuyBottomSheep extends StatelessWidget {
             ),
           ),
           onPressed: () {
-            launch("sms://+998 97 736-63-25");
+            launch("sms://$phone");
             Get.back();
           },
         ),
@@ -137,16 +139,16 @@ class BuyBottomSheep extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            const Text(
-              "Sof zotli toy",
-              style: TextStyle(
+             Text(
+              data['title'],
+              style: const TextStyle(
                 fontSize: 20.0,
                 fontWeight: FontWeight.w600,
               ),
             ),
             Obx(
               () => Text(
-                (_incrementGetx.incrementValue.value * 2000000).toString(),
+                (_incrementGetx.incrementValue.value * data['price']).toString(),
                 style: const TextStyle(
                   fontSize: 20.0,
                   fontWeight: FontWeight.w800,

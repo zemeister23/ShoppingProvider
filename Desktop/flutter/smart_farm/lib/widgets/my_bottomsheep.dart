@@ -13,12 +13,14 @@ class MyBottomSheep extends StatelessWidget {
   final String? listTile;
   final int productMoney;
   final bool isIncrement;
+  final String balance;
 
   MyBottomSheep({
     Key? key,
     required this.myImage,
     required this.productName,
     required this.productMoney,
+    required this.balance,
     this.listTile,
     this.isIncrement = false,
   }) : super(key: key);
@@ -34,7 +36,7 @@ class MyBottomSheep extends StatelessWidget {
       ),
       child: Container(
         color: Colors.white,
-        height: getProportionateScreenHeight(listTile != null ? 459.0 : 407.0),
+        height: getProportionateScreenHeight(listTile != null ? 500.0 : 407.0),
         child: Column(
           children: [
             Expanded(
@@ -83,7 +85,7 @@ class MyBottomSheep extends StatelessWidget {
                               ),
                             ),
                             subtitle: Text(
-                              "150 000 sum",
+                              "$balance so'm",
                               style: TextStyle(
                                 color: Colors.white,
                                 fontSize: getProportionateScreenHeight(18.0),
@@ -127,12 +129,19 @@ class MyBottomSheep extends StatelessWidget {
                             ),
                             flex: 2,
                           ),
-                          Text(
-                            listTile!,
-                            style: const TextStyle(
-                              fontSize: 16.0,
-                              fontWeight: FontWeight.w600,
+                          Expanded(
+                            child: ListView(
+                              children: [
+                                Text(
+                                  listTile!,
+                                  style: const TextStyle(
+                                    fontSize: 16.0,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                              ],
                             ),
+                            flex: 6,
                           ),
                           const Spacer(flex: 1),
                         ],

@@ -43,6 +43,9 @@ dependencies:
   animate_do: ^2.0.0
   firebase_core: ^1.10.2
   firebase_auth: ^3.3.0
+  dio: ^4.0.4
+  liquid_progress_indicator: ^0.4.0
+  google_fonts: ^2.1.0
 
 dev_dependencies:
   flutter_test:

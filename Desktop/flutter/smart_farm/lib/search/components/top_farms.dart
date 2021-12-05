@@ -6,7 +6,20 @@ import '../../constants.dart';
 import '../../size_config.dart';
 
 class TopFarms extends StatelessWidget {
-  TopFarms({Key? key}) : super(key: key);
+  String? name;
+  String? description;
+  String? countUser;
+  String? age;
+  String? imageUrl;
+
+  TopFarms(
+      {Key? key,
+      this.name,
+      this.description,
+      this.countUser,
+      this.age,
+      this.imageUrl})
+      : super(key: key);
 
   final SelectAnimals _animals = Get.find();
   @override
@@ -17,11 +30,11 @@ class TopFarms extends StatelessWidget {
       decoration: BoxDecoration(
         color: kPrimaryLightColor,
         borderRadius: BorderRadius.circular(10.0),
-        image: const DecorationImage(
-          image: AssetImage("assets/images/ina_ferma.png"),
+        image: DecorationImage(
+          image: NetworkImage(ipAdress + imageUrl.toString()),
           fit: BoxFit.cover,
         ),
-      ), 
+      ),
       height: getProportionateScreenHeight(150.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -35,9 +48,27 @@ class TopFarms extends StatelessWidget {
               vertical: getProportionateScreenHeight(4.0),
               horizontal: getProportionateScreenWidth(10.0),
             ),
-            child: const Text(
-              "172",
-              style: TextStyle(
+            child: Text(
+              "+ $countUser xaridorlar",
+              style: const TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.w600,
+                fontSize: 12.0,
+              ),
+            ),
+          ),
+          Container(
+            decoration: BoxDecoration(
+              color: kPrimaryColor,
+              borderRadius: BorderRadius.circular(58.0),
+            ),
+            padding: EdgeInsets.symmetric(
+              vertical: getProportionateScreenHeight(4.0),
+              horizontal: getProportionateScreenWidth(10.0),
+            ),
+            child: Text(
+              "+ $age yosh",
+              style: const TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.w600,
                 fontSize: 12.0,
@@ -50,18 +81,20 @@ class TopFarms extends StatelessWidget {
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: const [
+                  children: [
                     Text(
-                      "Ina ferma",
+                      "$name",
                       style: TextStyle(
                         fontSize: 16.0,
                         color: Colors.white,
                         fontWeight: FontWeight.w600,
+                        backgroundColor:
+                            Colors.black.withOpacity(0.3),
                       ),
                     ),
                     Text(
-                      "Eng yaxshi fermer xo'jaliiklaridan InaFerma",
-                      style: TextStyle(
+                      "$description",
+                      style: const TextStyle(
                         fontSize: 10.0,
                         color: Colors.white,
                         fontWeight: FontWeight.w400,

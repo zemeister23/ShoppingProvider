@@ -3,19 +3,19 @@ import 'package:smart_farm/size_config.dart';
 
 import '../../constants.dart';
 
-Widget firstVersion() {
+Widget firstVersion(String title, String description) {
   return Column(
     crossAxisAlignment: CrossAxisAlignment.start,
-    children: const [
+    children: [
       Expanded(
         child: Text(
-          "Broller tovuq",
+          title,
           overflow: TextOverflow.fade,
-          style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600),
+          style: const TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600),
         ),
         flex: 4,
       ),
-      Expanded(
+      const Expanded(
         child: Text(
           "Izoh",
           overflow: TextOverflow.fade,
@@ -25,9 +25,9 @@ Widget firstVersion() {
       ),
       Expanded(
         child: Text(
-          "Shu kunlari infektsiya tarqaldi va sizning tovuqlaringizga ham bu infektsiya yuqti, shoshilinch ravishda dori sotib olishingiz kerak!!",
+          description,
           overflow: TextOverflow.fade,
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 14.0,
             color: kPrimaryBorderColor,
           ),
@@ -38,14 +38,14 @@ Widget firstVersion() {
   );
 }
 
-Widget secondVersion() {
+Widget secondVersion(String title, String description, String readiness) {
   return Column(
     crossAxisAlignment: CrossAxisAlignment.start,
     children: [
-      const Text(
-        "Broller tovuq",
+      Text(
+        title,
         overflow: TextOverflow.fade,
-        style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600),
+        style: const TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600),
       ),
       Padding(
         padding: EdgeInsets.only(
@@ -57,10 +57,10 @@ Widget secondVersion() {
           style: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w600),
         ),
       ),
-      const Text(
-        "Shu kunlari infektsiya tarqaldi va sizning tovuqlaringizga ham bu infektsiya yuqti, shoshilinch ravishda dori sotib olishingiz kerak!!",
+      Text(
+        description,
         overflow: TextOverflow.fade,
-        style: TextStyle(
+        style: const TextStyle(
           fontSize: 14.0,
           color: kPrimaryBorderColor,
         ),

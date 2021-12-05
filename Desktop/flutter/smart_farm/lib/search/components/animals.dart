@@ -40,11 +40,12 @@ class Animals extends StatelessWidget {
             Align(
               alignment: Alignment.bottomRight,
               child: Container(
-                height: getProportionateScreenHeight(40.0),
-                width: getProportionateScreenHeight(40.0),
-                decoration: const BoxDecoration(
+                height: getProportionateScreenHeight(50.0),
+                width: getProportionateScreenHeight(50.0),
+                decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage("assets/images/tovuq.png"),
+                    image:
+                        AssetImage("assets/images/${title.toLowerCase()}.png"),
                     fit: BoxFit.cover,
                   ),
                 ),

@@ -12,7 +12,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FadeInDown(
-      duration: Duration(milliseconds: 300),
+      duration: const Duration(milliseconds: 300),
       child: Scaffold(
         body: Obx(() => kAllPages[_navigationOnTap.currentIndex.value]),
         bottomNavigationBar: MyNavigationBar(),

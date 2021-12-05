@@ -1,11 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:liquid_progress_indicator/liquid_progress_indicator.dart';
 import 'package:smart_farm/constants.dart';
 import 'package:smart_farm/menu/components/news_text_version.dart';
 import 'package:smart_farm/size_config.dart';
 
 class FarmNews extends StatelessWidget {
   final String? version;
-  const FarmNews({Key? key, this.version}) : super(key: key);
+  final String? readiness;
+  final String? title;
+  final String? description;
+
+  const FarmNews(
+      {Key? key, this.version, this.readiness, this.title, this.description})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +32,9 @@ class FarmNews extends StatelessWidget {
       child: Row(
         children: [
           Expanded(
-            child: version == "init" ? firstVersion() : secondVersion(),
+            child: version == "init"
+                ? firstVersion(title!, description!)
+                : secondVersion(title!, description!, readiness!),
             flex: 7,
           ),
           const Spacer(flex: 1),
@@ -35,24 +44,26 @@ class FarmNews extends StatelessWidget {
                   ? null
                   : getProportionateScreenHeight(108.0),
               alignment: Alignment.center,
-              decoration: BoxDecoration(
-                color: kPrimaryColor,
-                borderRadius: BorderRadius.circular(10.0),
-                boxShadow: [
-                  BoxShadow(
-                    offset: const Offset(0.8, 5.0),
-                    color: kPrimaryColor.withOpacity(0.2),
-                    blurRadius: 6.0,
-                  ),
-                ],
-              ),
-              child: Text(
-                "55%",
-                style: TextStyle(
-                  fontSize: getProportionateScreenHeight(18.0),
-                  color: Colors.white,
-                  fontWeight: FontWeight.w600,
-                ),
+              child: LiquidLinearProgressIndicator(
+                value: double.parse(readiness!) * 0.01, // Defaults to 0.5.
+                valueColor: const AlwaysStoppedAnimation(
+                    kPrimaryColor), // Defaults to the current Theme's accentColor.
+                backgroundColor: Colors
+                    .white, // Defaults to the current Theme's backgroundColor.
+                borderColor: kPrimaryColor,
+                borderWidth: 1.0,
+                borderRadius: 10.0,
+                direction: Axis
+                    .vertical, // The direction the liquid moves (Axis.vertical = bottom to top, Axis.horizontal = left to right). Defaults to Axis.horizontal.
+                center: version == "init"
+                    ? Text(
+                        "$readiness %\nTayyor",
+                        textAlign: TextAlign.center,
+                      )
+                    : Text(
+                        "$readiness %\nYegulik",
+                        textAlign: TextAlign.center,
+                      ),
               ),
             ),
             flex: 3,

@@ -15,11 +15,11 @@ class ChooseAnimal extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: List.generate(
-          _animals.typeOfAnimals.length,
+          1,
           (index) {
             return Obx(
               () => TextButton(
-                child: Text(_animals.typeOfAnimals[index]),
+                child: const Text('Jonzotlar'),
                 style: TextButton.styleFrom(
                   backgroundColor: _animals.currentAnimal.value == index
                       ? kPrimaryColor
@@ -30,7 +30,7 @@ class ChooseAnimal extends StatelessWidget {
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10.0)),
                 ),
-                onPressed: () => _animals.chooseAnimal(index),
+                onPressed: () {},
               ),
             );
           },

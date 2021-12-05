@@ -10,6 +10,9 @@ const kPrimaryBorderColor = Color(0xFF999999);
 const kPrimaryColor = Color(0xFFFF8843);
 const kPrimaryDarkColor = Color(0xFFFF4949);
 const kPrimaryExtraColor = Color(0xFF55B963);
+
+const ipAdress = "http://localhost:1337";
+
 List<Widget> kAllPages = [
   MenuPage(),
   SearchPage(),

@@ -1,9 +1,26 @@
 import 'package:flutter/material.dart';
+import 'package:smart_farm/service/backend_service.dart';
 import 'package:smart_farm/size_config.dart';
 import 'package:smart_farm/widgets/icons_path.dart';
 
-class BuyCard extends StatelessWidget {
+class BuyCard extends StatefulWidget {
   const BuyCard({Key? key}) : super(key: key);
+
+  @override
+  State<BuyCard> createState() => _BuyCardState();
+}
+
+class _BuyCardState extends State<BuyCard> {
+  int? balance;
+
+  @override
+  void initState() {
+    super.initState();
+    BackendService().getMyAnimals().then((value) {
+      balance = value[0]['balance'];
+      setState(() {});
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -32,15 +49,15 @@ class BuyCard extends StatelessWidget {
             minVerticalPadding: 0.0,
             contentPadding: const EdgeInsets.all(0.0),
             title: const Text(
-              "Hamyon balansi",
+              "Hamyon balansingiz",
               style: TextStyle(
                 color: Colors.white54,
                 fontSize: 14.0,
               ),
             ),
-            subtitle: const Text(
-              "150 000 sum",
-              style: TextStyle(
+            subtitle: Text(
+              "$balance so'm",
+              style: const TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.w600,
                 fontSize: 22.0,
@@ -57,7 +74,7 @@ class BuyCard extends StatelessWidget {
             children: const [
               Expanded(
                 child: Text(
-                  "5282 3456 2890 1289",
+                  "1111 2222 3333 4444",
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 14.0,
@@ -65,7 +82,7 @@ class BuyCard extends StatelessWidget {
                 ),
               ),
               Text(
-                "09/25",
+                "Smart Farm",
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 14.0,

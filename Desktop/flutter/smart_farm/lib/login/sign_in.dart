@@ -1,4 +1,5 @@
 import 'package:animate_do/animate_do.dart';
+import 'package:dio/dio.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -6,6 +7,7 @@ import 'package:intl_phone_number_input/intl_phone_number_input.dart';
 import 'package:smart_farm/constants.dart';
 import 'package:get/get_navigation/src/extension_navigation.dart';
 import 'package:smart_farm/home/home_page.dart';
+import 'package:smart_farm/login/sign_up.dart';
 
 class SignIn extends StatelessWidget {
   SignIn({Key? key}) : super(key: key);
@@ -25,7 +27,7 @@ class SignIn extends StatelessWidget {
           duration: const Duration(milliseconds: 400),
           child: Column(
             children: [
-              testLogin(),
+              textLogin(),
               numbers(context),
               loginButton(context),
             ],
@@ -35,7 +37,7 @@ class SignIn extends StatelessWidget {
     ));
   }
 
-  Padding testLogin() {
+  Padding textLogin() {
     return Padding(
       padding: EdgeInsets.only(bottom: Get.height * 0.05),
       child: Text(
@@ -64,7 +66,6 @@ class SignIn extends StatelessWidget {
               ),
               onPressed: () async {
                 if (_textKey.currentState!.validate()) {
-                  await modalBottomSheetForCode(context);
                   _textKey.currentState!.save();
                 }
               },
@@ -84,6 +85,13 @@ class SignIn extends StatelessWidget {
               },
               child: const Text("Smsni Kiritish",
                   style: TextStyle(color: kPrimaryColor)),
+            ),
+            TextButton(
+              onPressed: () async {
+                Get.to(SignUp());
+              },
+              child: const Text("Ro'yhatdan O'tish",
+                  style: TextStyle(color: kPrimaryDarkColor)),
             ),
           ],
         ));
@@ -174,7 +182,19 @@ class SignIn extends StatelessWidget {
                 hintStyle: TextStyle(color: Colors.grey.shade500, fontSize: 16),
               ),
               onSaved: (PhoneNumber number) async {
-                await verifyPhoneNumber(number.phoneNumber, context);
+                checkUser(number).then((v) async {
+                  if (v != null) {
+                    await modalBottomSheetForCode(context);
+                    await verifyPhoneNumber(number.phoneNumber, context);
+                  } else {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(
+                        backgroundColor: Colors.green,
+                        content: Text("Bu Raqam Ro'yhatdan O'tmagan !"),
+                      ),
+                    );
+                  }
+                });
               },
             ),
           ),
@@ -230,7 +250,17 @@ class SignIn extends StatelessWidget {
       Get.off(HomePage());
     } catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text("Parolni Tekshirib Qaytadan Tering !")));
+          const SnackBar(content: Text("Parolni Tekshirib Qaytadan Tering !")));
+    }
+  }
+
+  Future checkUser(number) async {
+    var allUsers = await Dio().get(ipAdress + '/users');
+    var data = allUsers.data;
+    for (var phone in data) {
+      if (phone['phone'].toString() == number.toString()) {
+        return phone['phone'];
+      }
     }
   }
 }

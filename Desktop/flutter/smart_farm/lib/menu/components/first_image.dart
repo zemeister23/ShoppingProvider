@@ -8,10 +8,14 @@ import '../../size_config.dart';
 class FirstImage extends StatelessWidget {
   final BorderRadius? radius;
   final Alignment myAlignment;
-  const FirstImage({
+  String? imageUrl;
+  String? count;
+  FirstImage({
     Key? key,
     this.radius,
     required this.myAlignment,
+    this.imageUrl,
+    this.count,
   }) : super(key: key);
 
   @override
@@ -25,8 +29,8 @@ class FirstImage extends StatelessWidget {
       decoration: BoxDecoration(
         color: kPrimaryLightColor,
         borderRadius: radius,
-        image: const DecorationImage(
-          image: AssetImage("assets/images/Rectangle1522.png"),
+        image: DecorationImage(
+          image: NetworkImage(imageUrl!),
           fit: BoxFit.cover,
         ),
       ),
@@ -42,7 +46,7 @@ class FirstImage extends StatelessWidget {
               vertical: getProportionateScreenHeight(8.0),
             ),
             child: Text(
-              "5 dona",
+              "$count dona",
               style: TextStyle(
                 fontSize: getProportionateScreenHeight(12.0),
                 color: Colors.white,

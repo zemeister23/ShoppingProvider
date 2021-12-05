@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:smart_farm/constants.dart';
 import 'package:smart_farm/home/home_page.dart';
 import 'package:smart_farm/login/sign_in.dart';
@@ -25,9 +26,11 @@ class MyApp extends StatelessWidget {
         primaryColor: kPrimaryColor,
         scaffoldBackgroundColor: kPrimaryBackgroundColor,
         appBarTheme: const AppBarTheme(backgroundColor: kPrimaryColor),
-        textTheme: const TextTheme(
-            bodyText1: TextStyle(color: Colors.black),
-            bodyText2: TextStyle(color: Colors.black)),
+        textTheme: GoogleFonts.latoTextTheme(
+          Theme.of(context).textTheme.copyWith(
+              bodyText1: const TextStyle(color: Colors.black),
+              bodyText2: const TextStyle(color: Colors.black)),
+        ),
       ),
       home: FirebaseService.auth.currentUser != null ? HomePage() : SignIn(),
     );
