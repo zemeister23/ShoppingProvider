@@ -1,0 +1,11 @@
+export 'package:firebase_core/firebase_core.dart';
+export 'package:flutter/material.dart';
+export 'package:http/http.dart';
+export 'dart:convert';
+export 'package:cloud_firestore/cloud_firestore.dart';
+export 'package:dars61/screens/chat_page.dart';
+export 'package:dars61/screens/login_page.dart';
+export 'package:dars61/screens/register_page.dart';
+export 'package:dars61/screens/kirish.dart';
+export 'package:flutter_svg/svg.dart';
+export 'package:firebase_auth/firebase_auth.dart';

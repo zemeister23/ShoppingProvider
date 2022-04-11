@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "292596765801",
+    "project_id": "notif-323bc",
+    "storage_bucket": "notif-323bc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:292596765801:android:05e7d12842290824d8bef8",
+        "android_client_info": {
+          "package_name": "com.example.localnotification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "292596765801-7dievggfsfusovv25kahmhkk2b9eqfp2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAaf2P-bBlvtPBFZ2Y3CUtBR85g4iJACk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "292596765801-7dievggfsfusovv25kahmhkk2b9eqfp2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
