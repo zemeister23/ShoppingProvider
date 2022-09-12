@@ -1,0 +1,271 @@
+{
+  "registration": "Registration",
+"enter_phone_number" : "Enter your phone number",
+"continue" : "Continue",
+"check_number_message" : "Check that the phone number you entered is correct. If the number is entered correctly, please let us know",
+"telegram_link" : "(link in telegram). ",
+"check_number_message_1" : "Thanks for helping us make the app better.",
+"check_number" : "Check number",
+
+"no_internet_message": "Связь потеряна. Проверьте интернет подключение",
+"try_again_internet": "Повторить попытку",
+
+"enter_the_code" : "Enter the code sent to the number",
+"resending_code_after" : "Resending the code after",
+"request_code_again" : "Request the code again",
+"sms_create_out" : "Number of incorrect attempts exceeded, try again in 15 minutes",
+"1_try_left" : "I accept the terms of ATTEMPT the IPO",
+
+"accept" : "Accept",
+"oferta" : "IPO",
+"oferta_alert_text_1"  :"Men biometrik shaxsiy ma’lumotlarimni qayta ishlashga rozilik beraman va",
+"oferta_alert_text_2" : "ommaviy oferta shartlarini qabul qilaman.",
+
+
+"pin_code_installation" : "PIN Code Installation",
+"sign_in_code" : "Sign in with 8 Digit Code",
+"confirm_pin" : "Confirm your PIN",
+"code_doesn't" : "The code doesn't match",
+"attempts left" : " attempts left",
+
+"add_card": "Add a card",
+"online_services" : "Online services",
+
+"enter_card_number":"Enter the card number and expiration date",
+"mm/yy": "MM/YY",
+"wrong_card_expire" : "Wrong format",
+"does_not_match_message" : "The number you specified does not match the number to which SMS notification was connected",
+"does_not_match_title" : "Data does not match",
+"change_phone_number" : "Change phone number",
+"if_not_uzcard_1" : "Регистрация доступна для карт системы UZCARD выпущенных Hamkorbank. Закажите бесплатную карту системы UZCARD и используйте её при регистрации в приложении.",
+"have_uzcard" : "Already have Uzcard/Humo",
+
+"order" : "Order",
+"try_again_message"  :"Something went wrong. Try again.",
+"retry" : "RETRY",
+
+"card_not_found_title" : "Card not found",
+"card_not_found_message" : "Check that the information you entered is correct and try again.",
+"ok" : "OK",
+
+"auth_pass_code" : "Pin kodni kiritish Inglizchada",
+"change_language" : "Change language",
+"p2p_sms" : "Transaction",
+
+"profile" : "Profile",
+"change_the_language" : "Change the language",
+"atms_and_branches" : "ATMs and branches",
+"feedback" : "Feedback",
+"exit" : "Exit",
+
+
+"total_card_balance" : "Total card balance",
+"cards_and_accounts" : "Cards and accounts",
+"salary_account" : "Salary account",
+"main_account" : "Main account",
+"deposits" : "Deposits",
+"term" : "Term until NUMBER",
+"payment" : "Payment on NUMBER",
+"currency" : "Currency",
+"currency2" : "Currency",
+"sell" : "Sell",
+"buy" : "Buy",
+"branches" : "Branches",
+"ATMs" : "ATMs",
+"main" : "Main",
+"transfers" : "Transfers",
+"history" : "History",
+"services" : "Services",
+
+"type_card": "Main account",
+
+"order_card_online" : "Order a card online",
+"free_serviving" : "Null text",
+
+"free_transfer" : "Interest-free transfer up to NUMBER",
+"from_card_to_card_in_app" : "From card to card in app",
+
+"free_transfers" : "Null text",
+"stoc" : "Null text",
+"transfer_money" : "Null text",
+
+"registration_passcode_alert": "Ro'yhatdan o'tish",
+"cancel_passcode_alert": "Cancel",
+
+
+"identity_verification" : "Null text",
+"biometry_text" : "Null text",
+
+"is_photo_correct" : "Null text",
+"verify_your_face" : "Null text",
+"confirm" : "Null text",
+"retry2" : "Null text",
+
+"error" : "Oops...!",
+"sms_notif_not_received" : "SMS confirmation has not been received. Link an SMS notification via ATM or try to change the data entered earlier.",
+"change_card_number" : "Change the card number",
+
+"transfer" : "Transfer",
+"balance" : "NUMBER sum",
+"specify_card" : "Specify the card",
+"amount" : "Amount from 0 to 135 000 000 soums",
+"transactions_info" : "The amount of the commission will be specified after entering the payment details",
+"transfer2" : "Transfer",
+
+"select_debite_card" : "Select  debite card",
+
+"specify_the_card_to_transfer" : "Specify the card to transfer",
+"first_and_last_name" : "First and Last Name",
+
+"transfer_to_card" : "Transfer to the card",
+"specify_amount_of_commission" : "The amount of the commission will be specified after entering the payment details",
+
+"uzs" : "UZS",
+
+"success_transfer" : "The transfer was completed successfully",
+"type_of_transaction" : "Type of transaction:",
+"recipient" : "Recipient:",
+"recipients_card" : "Recipient's card:",
+"sender" : "Sender:",
+"senders_card" : "Sender's card:",
+"commission_amount" : "Commission amount:",
+"transaction_ID" : "Transaction ID :",
+"date" : "Date:",
+"take_screenshot" : "Take a screenshot",
+
+"branches_and_ATMs" : "Branches and ATMs",
+"all" : "All",
+"select_city_or_region" : "Select a city or region",
+
+"city" : "NUMBER city",
+"region" : "NUMBER region",
+
+"branch" : "NUMBER branch",
+"address" : "Address",
+"work_schedule" : "Work schedule",
+"opening_hours" : "Opening hours: ",
+"technical_break" : "Technical break: NUMBER",
+"services2" : "Services",
+"sat_sun" : "Sat-Sun : NUMBER",
+"target" : " Target : ",
+
+"ATM_Uzcard" : "ATM: Uzcard",
+
+"invalid_phone_number" : "Previously, to the number NUMBER a profile has been registered. Use a different number or try to restore access",
+"enter_another_number" : "Enter another number",
+"restore_access" : "Restore Access",
+
+"invalid_internet" : "The connection is lost. Check your internet connection",
+"try_again" : "Try again",
+
+"total_balance" : "Total balance",
+"term_deposit" : "Term deposit for NUMBER months",
+"interest-free_balance_transfers" : "Interest-free balance transfers",
+"between_hamkorbank_cards" : "Between Hamkorbank cards",
+"payment_on" : "Payment on NUMBER UZS",
+"title" : "Title",
+"exchange_rate" : "Exchange rate",
+"to_sell" : "To sell",
+
+"term_until" : "Term until NUMBER",
+
+"order_card_online2" : "Order a card online",
+
+"free_maintenance_and_release" : "Maintenance and release - free of charge",
+
+"credits" : "Credits",
+
+
+
+"check_number_message2" : "Check that the phone number you entered is correct. If the number is entered correctly, please let us know (link in telegram). Thanks for helping us make the app better.",
+"check_number_button" : "Check number",
+
+"not_send_sms" : "Failed to send SMS",
+"check_number_and_try_message" : "Check that the phone number you entered is correct and try again.",
+
+"if_not_uzcard" : "Registration is available for UZCARD and HUMO cards issued by Hamkorbank. Order a free UZCARD and HUMO card and use it when registering in the app.",
+
+"card_blocked" : "Card has been declined",
+"get_support" : "Contact support at 1256",
+
+"reg_not_possible_title" : "Registration is not possible",
+"reg_not_possible_message" : "The app is unavailable for technical reasons. Sorry about the inconvenience.",
+
+"check_box" : "Check the box. Registration is not possible without consent.",
+
+"no_atm" : "There are no ATMs in this region",
+"no_branches" : "There are no branches in this region",
+"no_supported_app" : "This version of the app is no longer supported. Update the app",
+
+"correct_camera" : "Look straight into the camera, remove accessories and headgear",
+"poor_quality_photo" : "Poor quality photo",
+
+"contact_to_branch" : "Contact any branch of the bank",
+
+"registration_blocked" : "Registration is blocked for 24 hours",
+"data_not_found" : "Data not found",
+
+"card_not_service" : "Sorry, but this card is not supported by our app.",
+
+"app_blocked_title" : "Application blocked",
+"app_blocked_message" : "Reinstall the application and register again.",
+
+"check_nuber_or_get_support" : "Check if the entered number is correct. If the number is entered correctly, report it via (link to the telegram).",
+
+"check_nuber_and_try_message" : "Check that the phone number you entered is correct and try again.",
+
+"sms_has_expired" : "SMS has expired.",
+"send_sms" : "Send SMS",
+"commission" : "Commission",
+
+"enter_card_number_again" : "Something went wrong. Enter the card number again.",
+
+"requests_exceeded" : "The number of requests has been exceeded. Try again in 15 minutes.",
+"t_block" : "Temporary blocking",
+
+"wrong_card_expire2" : "Card expiration date is incorrect",
+
+"blocking_card_possible" : "Temporary blocking of the card is possible if the expiration date of the card is entered incorrectly!",
+
+"incorrect_sms" : "Verification code is wrong",
+"check_and_retry_sms" : "Check if the verification code is correct and try again",
+
+"error_retry" : "Transferring error. Please try again",
+
+"error_in_external_service" : "Something went wrong. Try again. If the error repeats, report it via ConsultHamkorbankBot",
+
+"sms_time_out" : "The sms code confirmation time has expired",
+
+"less_than_limit" : "The amount is less than the minimum limit",
+
+"more_than_limit" : "The amount is more than the maximum limit",
+
+"blocked_transaction" : "Money transfer is temporarily not allowed",
+
+"default" : "Internal server error.",
+"yanvar" : "yanvar",
+"fevral" :"fevral",
+"mart"   :"mart",
+"aprel"  :"aprel", 
+"may"    :"may",
+"iyun"    : "iyun",
+"iyul"   : "iyul",
+"avgust" :"avgust",
+"sentabr" : "sentabr",
+"oktabr" : "sentabr",
+"noyabr" : "noyabr",
+"dekabr" : "dekabr",
+
+"not_funt_transfer" : "Insufficient funds for the transfer",
+"minimum_money_transfer"  : "Minimum transfer amount 500 UZS",
+
+"card_not_be_same"  :"",
+"card_not_be_same_message" : "Karta bir xil bolmasligi kerak",
+"change_lang": "Tilni o'zgartirish",
+"sms_code_expired": "The sms code confirmation time has expired",
+"block_phone" : "Ваш аккаунт заблокирован, попробуйте через 20 минут",
+"invalid_SMS_code" : "Check if the verification code is correct and try again",
+"failed_to_send_SMS" : " Check that the phone number you entered is correct and try again.",
+"number_attempts_many" : "The number of attempts when entering an SMS code has been exceeded"
+
+}

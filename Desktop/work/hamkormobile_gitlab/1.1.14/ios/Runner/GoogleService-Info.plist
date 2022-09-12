@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>775400761180-bms1cavktvmd4fna38r3sc4lvp1uepmp.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.775400761180-bms1cavktvmd4fna38r3sc4lvp1uepmp</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>775400761180-dcia3883n02db7te3cvsjnrni7fk5fuc.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBPGKc87L8lwFEDn80it1DhGc3KdTWoISE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>775400761180</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.hamkorbank.mobile</string>
+	<key>PROJECT_ID</key>
+	<string>hamkor-337fe</string>
+	<key>STORAGE_BUCKET</key>
+	<string>hamkor-337fe.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:775400761180:ios:ec5430b7bc96b47b060399</string>
+</dict>
+</plist>

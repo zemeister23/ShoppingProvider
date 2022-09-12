@@ -1,0 +1,11 @@
+<svg width="53" height="39" viewBox="0 0 53 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.5" y="0.62207" width="52" height="38" rx="7" fill="#7EC9A0"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M22.7334 14.0221C25.9734 14.0221 28.6 13.0371 28.6 11.8221C28.6 10.607 25.9734 9.62207 22.7334 9.62207C19.4933 9.62207 16.8667 10.607 16.8667 11.8221C16.8667 13.0371 19.4933 14.0221 22.7334 14.0221Z" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M16.8667 26.4887C16.8667 27.7038 19.4933 28.6887 22.7334 28.6887C24.3577 28.6887 25.8279 28.4412 26.8902 28.0412" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M16.8667 22.0887C16.8667 23.3038 19.4933 24.2887 22.7334 24.2887C23.4687 24.2887 24.1724 24.238 24.821 24.1454" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M16.8667 16.9554C16.8667 18.1704 19.4933 19.1554 22.7334 19.1554C25.9734 19.1554 28.6 18.1704 28.6 16.9554" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M16.8667 11.8221V26.4887" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M28.6001 11.8221V18.0554" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M30.8 29.4221C34.0401 29.4221 36.6667 26.7955 36.6667 23.5554C36.6667 20.3153 34.0401 17.6887 30.8 17.6887C27.5599 17.6887 24.9333 20.3153 24.9333 23.5554C24.9333 26.7955 27.5599 29.4221 30.8 29.4221Z" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M30.8 25.7554C32.015 25.7554 33 24.7704 33 23.5554C33 22.3404 32.015 21.3554 30.8 21.3554C29.5849 21.3554 28.6 22.3404 28.6 23.5554C28.6 24.7704 29.5849 25.7554 30.8 25.7554Z" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
