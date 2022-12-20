@@ -242,7 +242,7 @@ class _TranslationsScreenState extends State<TransactionScreen> {
           //  : const SizedBox(),
           InkWell(
             onTap: () async {
-              if (context.transactionsPr.transferEmty != 0 ||
+              if (context.transactionsPr.transferEmpty != 0 ||
                   context.transactionsPr.transferHomePageData) {
                 FocusNode _focusNode = FocusNode();
                 BottomSheets.enteringTransferAmount(
@@ -292,7 +292,7 @@ class _TranslationsScreenState extends State<TransactionScreen> {
           ),
           const Spacer(flex: 5),
           GradientButton(
-            colorOpacity: (context.transactionPrStream.transferEmty != 0 ||
+            colorOpacity: (context.transactionPrStream.transferEmpty != 0 ||
                         context.transactionPrStream.transferHomePageData) &&
                     (context.transactionPrStream.amount.value != null) &&
                     context.transactionPrStream.commissionSum != null &&
@@ -310,7 +310,7 @@ class _TranslationsScreenState extends State<TransactionScreen> {
                         context.transactionPrStream.totalSum.toString()) +
                     " UZS " +
                     "transfer2".locale,
-            onPressed: (context.transactionPrStream.transferEmty != 0 ||
+            onPressed: (context.transactionPrStream.transferEmpty != 0 ||
                         context.transactionPrStream.transferHomePageData) &&
                     (context.transactionPrStream.amount.value != null) &&
                     context.transactionPrStream.commissionSum != null &&
@@ -666,7 +666,7 @@ class _TranslationsScreenState extends State<TransactionScreen> {
       );
     }
 
-    if (context.transactionsPr.transferEmty == 0) {
+    if (context.transactionsPr.transferEmpty == 0) {
       // reciver cart not
       return ListTile(
         dense: true,
@@ -708,7 +708,7 @@ class _TranslationsScreenState extends State<TransactionScreen> {
           color: ColorConst.instance.kElementsColor,
         ),
       );
-    } else if (context.transactionsPr.transferEmty == 1) {
+    } else if (context.transactionsPr.transferEmpty == 1) {
       return ListTileW(
         onTap: () {
           BottomSheets.specifyCard(context, data2, senderCard);

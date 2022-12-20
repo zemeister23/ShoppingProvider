@@ -99,7 +99,7 @@ class PaymentValidateApi {
               .data![context.transactionsPr.homeDataIndex].templateId
               .toString(),
         };
-      } else if (context.transactionsPr.transferEmty <= 1) {
+      } else if (context.transactionsPr.transferEmpty <= 1) {
         data = {
           "is_template": true,
           "receiver": {

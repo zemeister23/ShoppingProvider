@@ -49,7 +49,7 @@ class TransactionsProivder extends ChangeNotifier {
   String signId = "";
   int cardsState = 0;
   int transferCardStare = 0;
-  int transferEmty = 0;
+  int transferEmpty = 0;
   bool smsTranlationsPage = false;
   num? commissionSum;
   late P2PInfoModel responseP2pInfo;
@@ -101,7 +101,7 @@ class TransactionsProivder extends ChangeNotifier {
   }
 
   dispose() {
-    transferEmty = 0;
+    transferEmpty = 0;
   }
 
   void initState() {
@@ -113,7 +113,7 @@ class TransactionsProivder extends ChangeNotifier {
     signId = "";
     summa = "";
     loading = false;
-    transferEmty = 0;
+    transferEmpty = 0;
     WidgetsBinding.instance.addPostFrameCallback((_) {
       // Add Your Code here.
     });
@@ -204,7 +204,7 @@ class TransactionsProivder extends ChangeNotifier {
 
   changeTransferCard(int state) {
     transferCardStare = state;
-    transferEmty = 1;
+    transferEmpty = 1;
     notifyListeners();
   }
 
@@ -396,7 +396,7 @@ class TransactionsProivder extends ChangeNotifier {
       controllerAmount.clear();
       commissionSum = null;
       summa = '';
-      transferEmty = 3;
+      transferEmpty = 3;
       notifyListeners();
       return responseP2pInfo;
     } catch (e) {

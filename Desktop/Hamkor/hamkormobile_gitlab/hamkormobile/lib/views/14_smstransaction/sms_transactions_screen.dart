@@ -57,7 +57,6 @@ class _SmsTransactionsScreenState extends BaseState<SmsTransactionsScreen>
   }
 
   @override
-  @override
   void dispose() {
     super.dispose();
     _smsProvider.disposee();
