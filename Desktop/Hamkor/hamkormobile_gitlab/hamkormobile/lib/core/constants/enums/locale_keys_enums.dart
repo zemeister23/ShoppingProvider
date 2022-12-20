@@ -1,0 +1,1 @@
+enum PreferenceKeys { TOKEN }

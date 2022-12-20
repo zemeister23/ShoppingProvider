@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "775400761180",
+    "project_id": "hamkor-337fe",
+    "storage_bucket": "hamkor-337fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:775400761180:android:0c86608d8b3dd5e3060399",
+        "android_client_info": {
+          "package_name": "com.hamkorbank.mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "775400761180-s29farn9ho34pebh9rbu1fns4uvma9c1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZAfhk54EIRKPx5vO5NYpeHU6Bc-uASKc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "775400761180-s29farn9ho34pebh9rbu1fns4uvma9c1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

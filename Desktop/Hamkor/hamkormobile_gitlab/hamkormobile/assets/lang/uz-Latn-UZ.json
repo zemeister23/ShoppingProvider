@@ -1,0 +1,354 @@
+{
+   "registration": "Ro'yhatdan o'tish",
+   "enter_phone_number" : "Telefon raqamingizni kiriting",
+  "continue" : "Davom etish",
+  "check_number_message" : "Kiritilgan telefon raqam to’g’riligini tekshiring. Agar raqam to’g’ri kiritilgan bo'lsa, bizga xabar bering(",
+  "telegram_link" : "telegramdagi havola",
+  "check_number_message_1" : ").Ilovani yaxshilashga yordam berayotganingiz uchun rahmat.",
+  "check_number" : "Raqamni tekshirish",
+  
+  "no_internet_message": "Bog'lanish uzildi. Internet aloqangizni tekshiring.",
+  "try_again_internet": "Qaytadan urinish",
+
+
+  "main_card": "Asosiy",
+  "pension": "Pensiya",
+  "own_account": "Shaxsiy hisob",
+
+  "version": "Versiya ",
+
+  "branchs": "Filiallar",
+  "bancomates": "Bankomatlar",
+  "choose_city_or_region": "Shahar yoki viloyatni tanlang",
+  "branchs_and_bancomates":"Filial va bankomatlar",
+
+  "enter_the_code" : "NUMBER raqamiga yuborilgan kodni kiriting",
+  "resending_code_after":"Kodni boshqatdan yuborish SEKUND sekunddan keyin",
+  "request_code_again" : "Kodni boshqatdan yuborish",
+  "verification_invalid_data" : "Tekshirishning ilojisi yo'q - ma'lumotlar noto'g'ri",
+  "please_report_problem" : "Iltimos bu haqida ",
+  "please_report_problem_2" :"bot orqali bizga xabar bering",
+   "link_bot" : "ConsultHamkorbankBot",
+  "sms_code_invalid":"Sms kod noto’g’ri\nSizda NUMBER ta urinish qoldi",
+  "accept_oferta" :"Ommaviy ofertani qabul qilaman",
+  "accept" : "Qabul qilish",
+  "temporary_block" : "Vaqtincha bloknadi",
+
+  "oferta" : "Oferta",
+  "oferta_alert_text_1"  :"Men biometrik shaxsiy ma’lumotlarimni qayta ishlashga rozilik beraman va ommaviy oferta shartlarini",
+  "oferta_alert_text_2" : " qabul qilaman.",
+
+  "pin_code_installation" : "PIN-kodni o'rnatish",
+  "sign_in_code" : "Ilovaga kirish uchun 4 dan 8 gacha bo'lgan kodni o'ylab toping",
+  "confirm_pin" : "PIN-kodingizni tasdiqlang",
+  "code_doesn't" : "Kod mos kelmayapdi",
+  "attempts left" : "ATTEMPT ta urinishlar qoldi",
+  "1_try_left" : "ta urinish qoldi",
+
+  "add_card": "Kartani qo’shish",
+  "online_services" : "Onlayn servislar",
+  "card_incorrect" : "Kartaning amal qilish muddati noto'g'ri ko'rsatilgan",
+
+  "enter_card_number":"Kartaning raqami va amal qilish muddatini kiriting",
+  "mm/yy": "Oy/Yil",
+  "wrong_card_expire" : "Noto'gri format",
+  "does_not_match_message" :"Siz ko'rsatgan raqam SMS-xabarnoma ulangan raqamiga mos kelmayapdi",
+  "does_not_match_title" : "Maʼlumotlar mos kelmayapti",
+  "change_phone_number" :"Telefon raqamni o'zgartirish",
+  "if_not_uzcard_1" : "Hamkorbankning  UZCARD/HUMO kartalarini ro‘yxatdan o‘tkazish mumkin. Bepul UZCARD/HUMO  kartasiga buyurtma bering va undan ilovada ro‘yxatdan o‘tishda foydalaning.",
+  "have_uzcard" : "Uzcard/Humo bor",
+  "order_new_one" : "Yangi kartani buyurtma qilish",
+  "order" : "Buyurtma berish",
+  "try_again_message"  :"Noma’lum xatolik.  Qayta urinib ko`ring.",
+  "retry"  :"Qayta urinish",
+   
+  "card_not_found_title" : "Karta topilmadi",
+  "card_not_found_message" : "Karta ma’lumotlarini tekshiring va qaytadan urinib koʻring.",
+  "ok" : "Tushunarli",
+
+  "auth_pass_code" : "Pin kodni kiritish",
+  "change_language" : "Tilni o'zgartirish",
+  "p2p_sms" : "O'tkazma",
+
+  "commission" : "Komissiya",
+
+
+  "wrong_pass_code": "PIN-kodingizni ATTEMPTCOUNT marta noto’g’ri terdingiz, TIMER soniyadan so’ng qayta urinib ko’ring. Agar PIN-kodingizni unutib qo’ygan bo’lsangiz qaytadan ro’yhatdan o’ting",
+  "wrong_pass_code_first": "PIN-kodingizni ATTEMPTCOUNT marta noto’g’ri terdingiz",
+  "wrong_pass_code_cancel_button":  "Bekor qilish",
+  "wrong_pass_code_cancel_registration": "Ro’yhatdan o’tish" ,
+  "confirm_pincode": "PIN-kodni kiriting",
+
+
+  "profile" : "Profil",
+  "change_the_language" : "Tilni o’zgartirish",
+  "atms_and_branches" : "Bankomat va filiallar",
+  "feedback" : "Qayta aloqa",
+  "exit" : "Chiqish",
+
+  "total_card_balance" : "Umumiy balans",
+  "cards_accounts" : "Karta va hisob raqamlari",
+  "salary_account" : "Oylik",
+  "main_account" : "Asosiy",
+  "deposits" : "Omonatlar",
+  "term" : "Muddati NUMBER yilgacha",
+  "payment" : "To’lov NUMBER",
+  "currency" : "Valyutalar kursi",
+  "currency2" : "Valyuta",
+  "sell" : "Sotish",
+  "buy" : "Sotib olish",
+  "branches" : "Filiallar",
+  "ATMs" : "Bankomatlar",
+  "main" : "Asosiy",
+  "transfers" : "O'tkazmalar",
+  "history" : "Monitoring",
+  "services" : "Servislar",
+
+  "registration_passcode_alert": "Ro'yhatdan o'tish",
+  "cancel_passcode_alert": "Bekor qilish",
+  "start": "Boshlash",
+  "confirm_face": "Shaxsni tasdiqlash",
+  "confirm_face_text": "Yuzingiz to’liq tushayotgani va uning barcha qismlari teng ravishda yoritilganligiga ishonch hosil qiling. Yuzingizni yopadigan har qanday aksessuarlarni olib qo’ying",
+  "is_all_okay_for_picture": "Rasm to’g’ri tushirilganmi?",
+  "make_sure_picture_is_okay": "Yuzingiz aniq ko’rinib turganiga ishonch hosil qiling",
+  "confirm_biometry": "Tasdiqlang",
+  "try_again_biometry": "Qayta urinib ko’ring",
+
+
+  "type_card": "Shaxsiy hisob",
+
+  "order_card_online" : "Onlayn kartaga buyurtma bering",
+  "free_serviving" : "Kartani chiqarish va xizmat ko’rsatish - bepul",
+
+  "free_transfer" : "NUMBER gacha bepul",
+  "from_card_to_card_in_app" : "Kartadan kartaga o’tkazmalar",
+
+  "free_transfers" : "NUMBER so’mgacha bepul o’tkazmalar",
+  "stoc" : "*Aksiya ushbu ilovada 01.02.2023 yilgacha amal qiladi. Kartadan kartaga oyiga 5 000 000 dan ortiq o’tkazmalarga 0,5 % komissiya qo’llaniladi",
+  "transfer_money" : "Pul o’tkazish",
+
+  "identity_verification" : "Shaxsni tasdiqlash",
+  "biometry_text" : "Yuzingiz to’liq tushayotgani va uning barcha qismlari teng ravishda yoritilganligiga ishonch hosil qiling. Yuzingizni yopadigan har qanday aksessuarlarni olib qo’ying",
+
+  "is_photo_correct" : "Rasm to’g’ri tushirilganmi?",
+  "verify_your_face" : "Yuzingiz aniq ko’rinib turganiga ishonch hosil qiling",
+  "confirm" : "Tasdiqlang",
+  "retry2" : "Qayta urinib ko’ring",
+
+  "error" : "Xatolik",
+  "sms_notif_not_received" : "Sms xabarnoma olinmadi. Sms xabarnomani bankomat orqali yoqing yoki oldingi kiritgan ma'lumotlaringizni o'zgartiring",
+  "change_card_number" : "Karta raqamini o'zgartirish",
+  
+  "transfer" : "O’tkazma",
+  "balance" : "NUMBER UZS",
+  "specify_card" : "Kartani kiriting",
+  "amount" : "0 dan 135 000 000 so'mgacha",
+  "transactions_info" : "Komissiya miqdori to'lov ma'lumotlari kiritilgandan keyin hisoblanadi",
+  "transfer2" : "O'tkazish",
+
+  "to_home_page": "Asosiy Sahifa",
+"take_p2p_screenshot": "Chekni rasmga olish",
+
+  "select_debite_card" : "Pul yechiladigan kartani tanlang",
+  
+  "specify_the_card_to_transfer" : "Pul o'tkaziladigan kartani ko'rsating",
+  "first_and_last_name" : "Null text",
+
+  "transfer_to_card" : "Kartaga o'tkazma",
+  "specify_amount_of_commission" : "Null text",
+  
+  "uzs" : "UZS",
+
+  "success_transfer" : "O'tkazma muvaffaqiyatli o'tdi",
+  "type_of_transaction" : "Tranzaksiya turi",
+  "recipient" : "Qabul qiluvchi",
+  "recipients_card" : "Qabul qiluvchining kartasi",
+  "sender" : "Yuboruvchi",
+  "senders_card" : "Yuboruvchining kartasi",
+  "commission_amount" : "Komissiya summasi",
+  "transaction_ID" : "Tranzaksiya IDsi",
+  "date" : "Sana",
+  "take_screenshot" : "Ekranni rasmga olish",
+  
+  "branches_and_ATMs" : "Filial va bankomatlar",
+  "all" : "Hammasi",
+  "select_city_or_region" : "Shahar yoki viloyatni tanlang",
+
+  "city" : "NUMBER shahar",
+  "region" : "NUMBER viloyati",
+
+  "branch" : "Null text",
+  "address" : "Manzil",
+  "work_schedule" : "Ish jadvali",
+  "opening_hours" : "Ish vaqti: ",
+  "technical_break" : "Texnik tanaffus: NUMBER",
+  "services2" : "Xizmatlar",
+"sat_sun" : "Dam olish : NUMBER",
+  "ATM_Uzcard" : "Bankomat: Uzcard",
+
+  "invalid_phone_number" : "NUMBER raqamiga avval profil ro’yhatdan o’tkazilingan. Boshqa profildan foydalaning yoki profilni tiklang",
+  "enter_another_number" : "Boshqa raqamni kiritish",
+  "restore_access" : "Profilni tiklash",
+  "target" : " Mo'ljal : ",
+
+  "invalid_internet" : "Aloqa uzilgan. Internetni tekshiring",
+  "try_again" : "Qayta urinib ko’ring",
+
+  "total_balance" : "Umumiy balans",
+  "term_deposit" : "NUMBER oyga muddatli omonat",
+  "interest-free_balance_transfers" : "Foizsiz pul o’tkazmalari",
+  "between_hamkorbank_cards" : "Hamkorbank ilovasida",
+  "payment_on" : "To'lov NUMBER",
+  "title" : "Null text",
+  "exchange_rate" : "Null text",
+  "to_sell" : "Null text",
+
+  "term_until" : "Muddati ",
+
+  "order_card_online2" : "Kartani onlayn buyurtma qiling",
+  
+  "free_maintenance_and_release" : "Kartani chiqarish va xizmat ko'rsatish - bepul",
+
+  "credits" : "Kreditlar",
+
+
+
+
+"check_number_message2" : "Kiritilgan telefon raqam to’g’riligini tekshiring. Agar raqam to’g’ri kiritilgan bo'lsa, bizga xabar bering (telegramdagi havola). Ilovani yaxshilashga yordam berayotganingiz uchun rahmat.",
+"check_number_button" : "Raqamni tekshirish",
+
+"not_send_sms" : "SMS yubora olmadik",
+"check_number_and_try_message" : "Kiritilgan telefon raqam to’g’riligini tekshiring va qaytadan urinib koʻring.",
+
+"if_not_uzcard" : "Hamkorbankning  UZCARD va HUMO kartalarini ro‘yxatdan o‘tkazish mumkin. Bepul UZCARD va HUMO  kartasiga buyurtma bering va undan ilovada ro‘yxatdan o‘tishda foydalaning.",
+
+"card_blocked" : "Karta bloklandi",
+"get_support" : "1256 telefon raqami orqali qo'llab-quvvatlash xizmatiga murojaat qiling",
+
+"reg_not_possible_title" : "Ro‘yxatdan o‘tish imkoniyati yo’q",
+"reg_not_possible_message" : "Ilova texnik sabablarga ko'ra ishlamayapdi. Keltirilgan noqulayliklar uchun uzr so'raymiz.",
+
+"check_box" : "Tasdiqlash belgisini qo’ying. Ruxsatingsiz ro’yxatdan o’tish mumkin emas.",
+
+"no_atm" : "Xozirda bu hudud bo’yicha bankomatlar mavjud emas",
+"no_branches" : "Xozirda bu hudud bo’yicha filiallar mavjud emas",
+
+"no_supported_app" : "Ilovaning ushbu versiyasi endi qo'llab-quvvatlanmaydi. Ilovani yangilang",
+
+"correct_camera" : "To’g’ri kameraga qarang, bosh kiyim va aksessuarlarni yechib qo’ying",
+"poor_quality_photo" : "Sifatsiz rasm",
+
+"contact_to_branch" : "Bankning xoxlagan bir filialiga murojaat qiling",
+
+"registration_blocked" : "Ro’yhatdan o’tish 24 soatga bloklandi",
+"data_not_found" : "Ma’lumotlar topilmadi",
+
+"card_not_service" : "Kechirasiz, lekin bu karta ilovamiz tomonidan qo‘llab-quvvatlanmaydi.",
+
+"app_blocked_title" : "Ilova bloklandi",
+"app_blocked_message" : "Ilovani boshqatdan o'rnating va qayta ro'yxatdan o'ting.",
+
+"check_nuber_or_get_support" : "Kiritilgan telefon raqamni tekshiring. Agar raqam to'g'ri kiritilgan bo'lsa, bu haqda bizga (tga havola) orqali xabar bering",
+
+"check_nuber_and_try_message" : "Kiritilgan telefon raqamni tekshiring va qaytadan urinib koʻring.",
+
+"sms_has_expired" : "SMS amal qilish muddati tugadi.",
+"send_sms" : "SMS so'rash",
+
+"enter_card_number_again" : "Null text",
+
+"requests_exceeded" : "Urinishlar soni oshib ketdi. 15 daqiqadan keyin qayta urinib ko'ring.",
+"t_block" : "Vaqtincha bloknadi",
+
+"wrong_card_expire2" : "Kartaning amal qilish muddati noto'g'ri ko'rsatilgan",
+
+"blocking_card_possible" : "Agar kartaning amal qilish muddati noto'g'ri kiritilgan bo'lsa, karta vaqtincha bloklanishi mumkin!",
+
+"incorrect_sms" : "Sms kod noto’g’ri",
+"check_and_retry_sms" : "SMS kod to'g'riligini tekshiring va qayta urinib ko'ring",
+
+"error_retry" : "Pul o'tkazishda xatolik. Qayta urinib ko’ring",
+
+"error_in_external_service" : "Noma’lum xatolik. Yana urinib ko'ring. Agar xatolik qaytarilsa ConsultHamkorbankBotorqali bizga xabar bering",
+
+"sms_time_out" : "Sms kodni tasdiqlashga berilgan vaqt tugadi",
+
+"less_than_limit" : "O’tkazma minimal summa limitidan kam",
+
+"more_than_limit" : "O’tkazma summasi maksimal limitdan yuqori",
+
+"blocked_transaction" : "O’tkazmaga vaqtincha ruxsat berilmaydi",
+
+"default" : "Serverdagi ichki xatolik.",
+
+"yanvar" : "yanvar",
+"fevral" :"fevral",
+"mart"   :"mart",
+"aprel"  :"aprel", 
+"may"    :"may",
+"iyun"    : "iyun",
+"iyul"   : "iyul",
+"avgust" :"avgust",
+"sentabr" : "sentabr",
+"oktabr" : "sentabr",
+"noyabr" : "noyabr",
+"dekabr" : "dekabr",
+"free_translations" : "5 000 000 so’mgacha bepul o’tkazmalar",
+"promotion_app"  :  "*Aksiya ushbu ilovada 01.02.2023 yilgacha amal qiladi. Kartadan kartaga oyiga 5 000 000 dan ortiq o’tkazmalarga 0,5 % komissiya qo’llaniladi",
+"make_translation" : "Pul o’tkazish",
+
+
+"not_funt_transfer" : "O'tkazma uchun pul yetarli emas",
+"minimum_money_transfer" :  " O’tkazma uchun minimal summa 500 UZS",
+
+"card_not_be_same"  :"",
+"card_not_be_same_message" : "Karta bir xil bo'lmasligi kerak",
+
+"change_lang": "Tilni o'zgartirish",
+"must_be_updated_message": "Ilovaning ushbu versiyasi endi qo'llab-quvvatlanmaydi. Ilovani yangilang",
+"min_version_update": "Yangilash",
+"sms_code_expired": "Sms kodni tasdiqlashga berilgan vaqt tugadi",
+"block_phone" : "Profilinggiz bloklandi, 20 daqiqadan so‘ng qayta urinib ko‘ring",
+"invalid_SMS_code" : "SMS kod to'g'riligini tekshiring va qayta urinib ko'ring",
+"failed_to_send_SMS" : "Kiritilgan telefon raqam to’g’riligini tekshiring va qaytadan urinib koʻring.",
+"number" : "Raqamni tekshirish",
+"number_attempts_many" : "Qayta urinishlar soni oshib ketdi",
+"exit_app" : "Siz haqiqatdan ham profildan chiqib ketmoqchimisiz?",
+"yes" : "Ha",
+"no" : "Yo’q",
+"you_can_not_transfer"  :"O'zingizga pul o'tkazish mumkin emas. Yuboruvchi va qabul qiluvchi kartalarning ma’lumotlarini tekshiring",
+"amount_maximum_and_minimum_limit" : "O’tkazma summasi maksimal limitdan yuqori",
+"block_15_min" : "Urinishlar soni oshib ketdi. MINUT daqiqadan keyin urinib ko'ring",
+"block_is_finished" : "Blokirovka vaqti tugadi.Kodni qayta yuborish kerakmi?",
+"sms_expired" : "Sms kodni kiritish muddati tugadi",
+"lockout_time_minutes" : "Blokirovka vaqti: MINUTES daqiqa",
+"blocking_time_expired" : "Blokirovka vaqti tugadi",
+
+"camera_move" : "Kameraga qarang va qimirlamang",
+"take_another_picture" : "Qaytadan rasmga tushing",
+"face_trust" : "Yuzingiz ramka ichida ekanligiga ishonch hosil qiling, ko'zlaringizni yummang va kameraga to’g’ri qarang",
+"face_snackbar" : "",
+"no_foto" : "Yuz aniqlanmadi. Yuz ramka ichiga tushayotganiga ishonch hosil qiling",
+"open_eye"  :" Ko'zingizni oching",
+"is_smile_true":"Kameraga qarang, jilmaying va qimirlamang",
+"text_1038" : "Rasmlarni solishtirish natijasi ijobiy emas",
+"bloc_web_view_bio" : "Превышено количество попыток. Пожалуйста попробуйте через 24 часа",
+"server_error" : "So’rovga javob qilish imkonsiz",
+"the_server_not_working" : "Servis vaqtincha ish holatida emas. Iltimos keyinroq urinib ko’ring",
+
+"pin_incorrect" : "Sizda urinishlar qoldi: NUMBER ta",
+"have_attempts" : "Sizda urinishlar qoldi: NUMBER ta",
+"history_emty" : "Bu yerda hozircha xech narsa yo’q",
+
+"access_face_touch_app"  :"\"Hamkor\"ilovasiga kirish uchun Face/touch IDdan yuborishga ruxsat berasizmi?",
+"dont_now"  :"Ruxsat bermayman",
+
+
+"activate"  :"Faollashtirish",
+"not_activate"  :"Faollashtirmaslik",
+"biometric_activate_subtitle" :  "Har kirganda pin kodni termaslik uchun faollashtiring",
+"biometric_activate_title" : "Face/Touch ID",
+"face-id-title":"Hamkor ilovasiga kirish",
+ "sms_is_not_active": "Kartaga sms xabarnoma yoqilmagan"
+
+}
